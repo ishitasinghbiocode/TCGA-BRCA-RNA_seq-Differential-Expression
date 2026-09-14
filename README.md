@@ -51,8 +51,13 @@ a. Volcano Plot - The volcano plot displays the relationship between statistical
 4. Fold-change threshold: |log2FC| > 1
 The plot labels the top 20 genes ranked by adjusted p-value.
 
+![Volcano Plot](figures/volcano_plot.png)
+
 b. Heatmap of Top Differentially Expressed Genes - A heatmap was generated using the 50 most significant genes based on adjusted p-value.
 The expression values were variance-stabilized using the DESeq2 vst() transformation and row-scaled before visualization.
+
+![Heatmap](figures/heatmap_top50.png)
+
 Sample annotations indicate:
 1. Normal tissue
 2. Primary tumour tissue
@@ -66,6 +71,9 @@ Significant Ensembl gene identifiers were mapped to Entrez Gene IDs before enric
 a. Gene ID mapping - Of the 6,853 significant DEGs, 5,467 genes were successfully mapped to Entrez Gene IDs and used for GO enrichment analysis.
 
 b. GO Biological Process results - The analysis identified 1,068 enriched Gene Ontology Biological Process terms using: "Benjamini-Hochberg adjusted p-value < 0.05"
+
+![GO Biological Process Enrichment](figures/GO_BP_dotplot.png)
+
 Among the most strongly enriched biological processes were:
 
 1. Extracellular structure organization
